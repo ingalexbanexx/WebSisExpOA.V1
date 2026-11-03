@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Merriweather', Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-sans: 'Merriweather', Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-primario: #082032;
+  --color-secundario: #2C394B;
+  --color-acento: #FC4F46;
+  --color-fondo: #F3F4F5;
+  --color-ddjj: #B71C1C;
+}
+
+@layer base {
+  body {
+    font-family: 'Merriweather', Georgia, Cambria, 'Times New Roman', Times, serif;
+    background-color: #F3F4F5;
+    color: #082032;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', Georgia, serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Clases de Identidad Institucional */
+.bg-primario {
+  background-color: #082032;
+}
+
+.text-primario {
+  color: #082032;
+}
+
+.border-primario {
+  border-color: #082032;
+}
+
+.bg-secundario {
+  background-color: #2C394B;
+}
+
+.text-secundario {
+  color: #2C394B;
+}
+
+.border-secundario {
+  border-color: #2C394B;
+}
+
+.bg-acento {
+  background-color: #FC4F46;
+}
+
+.hover\:bg-acento-hover:hover {
+  background-color: #e03e36;
+}
+
+.text-acento {
+  color: #FC4F46;
+}
+
+.border-acento {
+  border-color: #FC4F46;
+}
+
+.bg-fondo {
+  background-color: #F3F4F5;
+}
+
+.border-ddjj {
+  border-color: #B71C1C;
+}
+
+.bg-ddjj {
+  background-color: #B71C1C;
+}
+
+.text-ddjj {
+  color: #B71C1C;
+}
+
+/* Barra separadora oficial para DDJJ (Declaraciones Juradas) */
+.ddjj-separator {
+  height: 4px;
+  background-color: #B71C1C;
+  width: 100%;
+  border-radius: 2px;
+  margin: 1.25rem 0;
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  header, aside, .print\:hidden {
+    display: none !important;
+  }
+  
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Sistema de Gestión de Expedientes Digitales OA",
+  "description": "Sistema integral de tramitación, pases, archivado y seguimiento de expedientes administrativos con trazabilidad y auditoría.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
